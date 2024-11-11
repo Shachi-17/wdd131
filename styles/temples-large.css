@@ -1,0 +1,22 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+nav {
+    display: flex;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.gallery {
+    grid-template-columns: repeat(3, 1fr);
+}
