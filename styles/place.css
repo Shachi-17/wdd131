@@ -1,123 +1,70 @@
+:root {
+    --primary-color: #006400;
+
+    --secondary-color: #f0f8ff;
+
+}
+
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f8ff;
+    background-color: var(--secondary-color);
+
     color: #333;
-    line-height: 1.6;
 }
 
-/* Header */
 header {
-    background-color: #006400;
+    background-color: var(--primary-color);
+
     color: white;
     text-align: center;
-    padding: 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
 }
 
-/* Hero Section */
+main {
+    padding: 20px;
+}
+
 .hero img {
     width: 100%;
     height: auto;
-    object-fit: cover;
     display: block;
-    border-radius: 10px;
 }
 
-/* Main Content Area */
-main {
-    padding: 2rem;
-}
-
-/* Section Styles */
 section {
     margin: 20px 0;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 8px;
 }
 
-/* Data and Weather Boxes */
 .data,
 .weather {
-    background-color: rgba(255, 255, 255, 0.95);
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 8px;
 }
 
-/* Section Headings */
 .data h2,
 .weather h2 {
-    background-color: #006400;
+    background-color: var(--primary-color);
+    /* Using the global variable */
     color: white;
-    margin: -20px -20px 15px;
-    padding: 15px;
-    border-radius: 12px 12px 0 0;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 1.2rem;
+    margin: -15px -15px 15px;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
 }
 
-/* Info Box for Data and Weather */
 .data-info,
 .weather-info {
-    padding: 15px;
+    padding: 10px;
     line-height: 1.8;
-    font-size: 1rem;
 }
 
-/* Styling for Individual Data/Weather Items */
-.data-info p,
-.weather-info p {
-    margin-bottom: 10px;
-}
-
-.data-info span,
-.weather-info span {
-    font-weight: 500;
-    color: #006400;
-}
-
-/* Hover Effect for Sections */
-section:hover {
-    transform: translateY(-5px);
-    transition: all 0.3s ease;
-}
-
-/* Footer */
 footer {
     text-align: center;
-    padding: 1.5rem;
-    background-color: #006400;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    /* Using the global variable */
     color: white;
-    font-size: 0.9rem;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Responsive Layout */
-@media (max-width: 768px) {
-    header {
-        padding: 1rem;
-    }
-
-    main {
-        padding: 1rem;
-    }
-
-    .data,
-    .weather {
-        padding: 15px;
-    }
-
-    .data h2,
-    .weather h2 {
-        font-size: 1rem;
-    }
 }
