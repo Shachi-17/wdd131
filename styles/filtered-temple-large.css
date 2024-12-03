@@ -1,0 +1,25 @@
+/* Adjustments for larger screens */
+@media screen and (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    header button {
+        display: none;
+    }
+
+    nav ul {
+        justify-content: flex-end;
+    }
+
+    .gallery {
+        padding: 3rem;
+    }
+
+    figure {
+        padding: 2rem;
+    }
+}
