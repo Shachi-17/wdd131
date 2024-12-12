@@ -161,6 +161,37 @@ nav a:hover {
     font-family: 'Roboto', sans-serif;
 }
 
+/* Typography */
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Roboto+Condensed&display=swap');
+
+/* Styling for the <h3> element */
+h3 {
+    font-family: 'Croissant One', cursive;
+    /* Apply Croissant One font */
+    font-size: 2.5rem;
+    /* Set font size */
+    color: #333;
+    /* Dark color for contrast */
+    margin-bottom: 10px;
+    /* Space below */
+    letter-spacing: 1px;
+    /* Slight letter spacing for style */
+}
+
+/* Styling for the <h4> elements */
+h4 {
+    font-family: 'Roboto Condensed', Helvetica, sans-serif;
+    /* Apply Roboto Condensed font */
+    font-size: 1.25rem;
+    /* Set font size */
+    color: #555;
+    /* Lighter color for secondary text */
+    margin: 5px 0;
+    /* Small vertical spacing */
+    line-height: 1.6;
+    /* Spacing between lines for readability */
+}
+
 /* Color Palette */
 :root {
     --primary-color: #6a1b9a;
