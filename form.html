@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h1>Product Review</h1>
+        <form id="product-review-form" method="get" action="review.html">
+            <div class="form-group">
+                <label for="product-name">Product Name</label>
+                <select id="product-name" name="product" required>
+                    <option disabled selected>Select a Product ...</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="rating">Overall Rating</label>
+                <div id="rating">
+                    <input type="radio" id="star1" name="rating" value="1" required>
+                    <label for="star1">☆</label>
+                    <input type="radio" id="star2" name="rating" value="2" required>
+                    <label for="star2">☆</label>
+                    <input type="radio" id="star3" name="rating" value="3" required>
+                    <label for="star3">☆</label>
+                    <input type="radio" id="star4" name="rating" value="4" required>
+                    <label for="star4">☆</label>
+                    <input type="radio" id="star5" name="rating" value="5" required>
+                    <label for="star5">☆</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="installation-date">Date of Installation</label>
+                <input type="date" id="installation-date" name="installation-date" required>
+            </div>
+
+            <div class="form-group">
+                <label>Which features did you find useful?</label>
+                <div>
+                    <input type="checkbox" id="durability" name="features" value="Durability">
+                    <label for="durability">Durability</label>
+
+                    <input type="checkbox" id="ease-of-use" name="features" value="Ease of Use">
+                    <label for="ease-of-use">Ease of Use</label>
+
+                    <input type="checkbox" id="performance" name="features" value="Performance">
+                    <label for="performance">Performance</label>
+
+                    <input type="checkbox" id="design" name="features" value="Design">
+                    <label for="design">Design</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="written-review">Written Review (Optional)</label>
+                <textarea id="written-review" name="review" placeholder="Write your review here..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="user-name">Your Name (Optional)</label>
+                <input type="text" id="user-name" name="user-name" placeholder="Your name here">
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Post Review">
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>&#169; 2024 Product Reviews - All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="confirmation-container">
+        <h1>Thank You for Your Review!</h1>
+        <p>Your review has been submitted successfully.</p>
+        <p>Total Reviews Submitted: <span id="review-count">0</span></p>
+        <button onclick="window.location.href = 'form.html';">Submit Another Review</button>
+    </div>
+
+    <footer>
+        <p>&#169; 2024 Product Reviews - All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // Retrieve and display the review count from localStorage
+        const reviewCount = localStorage.getItem('reviewCount');
+        document.getElementById('review-count').textContent = reviewCount ? reviewCount : 0;
+    </script>
+</body>
+
+</html>
