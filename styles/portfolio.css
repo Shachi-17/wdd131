@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Roboto+Condensed&display=swap');
+
+:root {
+    --heading-font: "Croissant One";
+    --paragraph-font: 'Roboto Condensed', Helvetica, sans-serif;
+    --primary-color: #333;
+    --accent-color: #396e94;
+    --secondary-color: #e74c3c;
+    --hover-color: #e7c24f;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    background-color: var(--hover-color);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--accent-color);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-family: var(--heading-font);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+header img {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+
+header .site-title {
+    font-size: 24px;
+    color: var(--hover-color);
+    text-decoration: none;
+    font-family: var(--paragraph-font);
+}
+
+nav {
+    font-family: var(--paragraph-font);
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    background-color: var(--accent-color);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+nav a:hover {
+    transform: translateY(-5px);
+    background-color: var(--hover-color);
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--accent-color);
+    border-radius: 8px;
+    color: #fff;
+}
+
+#about {
+    margin-bottom: 40px;
+}
+
+#portfolio {
+    text-align: center;
+    padding: 40px 0;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.project {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    font-family: var(--heading-font);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.project img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project:nth-child(odd) {
+    background-color: #b48d5f;
+}
+
+.project:nth-child(even) {
+    background-color: #dbc234;
+}
+
+.project:nth-child(3n) {
+    background-color: #2756ae;
+}
+
+p a {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #a43312, #e7c24f, #396e94);
+    font-family: var(--heading-font);
+    font-size: large;
+}
+
+p {
+    color: #ffffff;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+}
